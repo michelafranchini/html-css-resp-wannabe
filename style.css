@@ -40,6 +40,22 @@
   
 }
 
+@media screen and (max-width: 768px) {
+
+  #lezioni > .row {
+    margin: 0;
+    padding: 10px;
+    background-color: #f2f2cd;
+  }
+  
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    font-size: 24px;
+  }
+}
 
 /* BLOCCO STEPS */
 #steps .row>.left,
@@ -53,6 +69,7 @@
   text-align: center;
 }
 
+
 @media screen and (max-width: 420px) {
   #steps .row>.left,
   #steps .row>.central,
@@ -63,7 +80,26 @@
   }
   
 }
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
   
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: calc(100% - 60px);
+    padding: 20px;
+    font-size: 27px;
+  }
+  
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  
+  #steps.container.grey {
+    background-color: lightblue;
+    width: fit-content;
+  }
+}
 
 /* BLOCCO PERCHE */
 #why {
@@ -94,6 +130,19 @@
     border: 1px solid black;
   }
     
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  
+  #why.container.grey {
+    background-color: #f2f2cd;
+    width: fit-content;
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+  font-size: 24px;
+  }
 }
 /* COMMON */
 .row::after {
